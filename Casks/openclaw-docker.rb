@@ -3,7 +3,7 @@ cask "openclaw-docker" do
   name "openclaw-docker"
   desc "CLI for building custom OpenClaw Dockerfiles"
   homepage "https://github.com/schmitthub/openclaw-docker"
-  version "0.1.0"
+  version "0.2.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "openclaw-docker" do
   on_macos do
     on_intel do
       url "https://github.com/schmitthub/openclaw-docker/releases/download/v#{version}/openclaw-docker_#{version}_darwin_amd64.tar.gz"
-      sha256 "d32fbd331928211b1df54453eb2ce81b204cf8fa0d2fdaf56af982517ba16e14"
+      sha256 "ca15718dad75f70f8e88a7b43acd6422abde63805d9319a58537a7dceea60e10"
     end
     on_arm do
       url "https://github.com/schmitthub/openclaw-docker/releases/download/v#{version}/openclaw-docker_#{version}_darwin_arm64.tar.gz"
-      sha256 "a89871a1815b2b58e7086824a44b502ac571654f21cfae463a7e695919debfa7"
+      sha256 "a9130feb23159251f632cb9a5e492390930fcb8be45dd43cf38c242f04323c3b"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/schmitthub/openclaw-docker/releases/download/v#{version}/openclaw-docker_#{version}_linux_amd64.tar.gz"
-      sha256 "ecc94e240ab5a50f1e3c7ee250b412283eb9f4fdfd4f7448d018ee061b69088b"
+      sha256 "27e6f77d14ceaa6774d21228a579c2838df43ecb927a73518528978548b5268d"
     end
     on_arm do
       url "https://github.com/schmitthub/openclaw-docker/releases/download/v#{version}/openclaw-docker_#{version}_linux_arm64.tar.gz"
-      sha256 "8b767646b203e7f098d85a5f9b351736c6aa235dda941716f1e89cd233599e51"
+      sha256 "2f4828dc34531d83e41913f26ad17cfd5ff7d9a83d6ebd87dfe7f1650008d29b"
     end
   end
 
