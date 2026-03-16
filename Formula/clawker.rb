@@ -5,21 +5,21 @@
 class Clawker < Formula
   desc "Development containers for AI coding agents"
   homepage "https://github.com/schmitthub/clawker"
-  version "0.3.2"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/schmitthub/clawker/releases/download/v0.3.2/clawker_0.3.2_darwin_amd64.tar.gz"
-      sha256 "0394aae4bb2c41aebe678cdf47ab7e20677a2e684e74deecff3de59ea21356ac"
+      url "https://github.com/schmitthub/clawker/releases/download/v0.4.0/clawker_0.4.0_darwin_amd64.tar.gz"
+      sha256 "66757227807ab4c84b909122308aaaeebc3608d4f2afe425b6c562fada24b18b"
 
       define_method(:install) do
         bin.install "clawker"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/schmitthub/clawker/releases/download/v0.3.2/clawker_0.3.2_darwin_arm64.tar.gz"
-      sha256 "5cbfe0329ea7d24c2532126fa8b4c17dc2c953f5f0c337cc003fcb84280787b7"
+      url "https://github.com/schmitthub/clawker/releases/download/v0.4.0/clawker_0.4.0_darwin_arm64.tar.gz"
+      sha256 "194c724b459e1a5aaa013a05357f2d01784d6c40c79641904336fae658488b9a"
 
       define_method(:install) do
         bin.install "clawker"
@@ -29,15 +29,15 @@ class Clawker < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/schmitthub/clawker/releases/download/v0.3.2/clawker_0.3.2_linux_amd64.tar.gz"
-      sha256 "4ee95c05ea440b6af8c6b97cb7fd3423cd547f3227a3264273c2b17a5464566e"
+      url "https://github.com/schmitthub/clawker/releases/download/v0.4.0/clawker_0.4.0_linux_amd64.tar.gz"
+      sha256 "09145693c08b951ca1fa979dd052ef8bc9f9b5c109090ae7ef9c3eeccf4bc69e"
       define_method(:install) do
         bin.install "clawker"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/schmitthub/clawker/releases/download/v0.3.2/clawker_0.3.2_linux_arm64.tar.gz"
-      sha256 "cf7c9033e815138c0f41d17f20779ebd57235dcc7351a4b4c8dfb062d05e6a72"
+      url "https://github.com/schmitthub/clawker/releases/download/v0.4.0/clawker_0.4.0_linux_arm64.tar.gz"
+      sha256 "b816709dd9f8f98a5af32d5427d7d8ad7566676ac21b8187d04485cf90b11fe7"
       define_method(:install) do
         bin.install "clawker"
       end
