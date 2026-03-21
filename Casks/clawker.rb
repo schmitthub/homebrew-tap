@@ -3,7 +3,7 @@ cask "clawker" do
   name "clawker"
   desc "Development containers for AI coding agents"
   homepage "https://github.com/schmitthub/clawker"
-  version "0.5.0"
+  version "0.5.2"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "clawker" do
   on_macos do
     on_intel do
       url "https://github.com/schmitthub/clawker/releases/download/v#{version}/clawker_#{version}_darwin_amd64.tar.gz"
-      sha256 "d87f98087ca545b40548ffd2250990f2a3d11c60683c836ef6175baa08d83272"
+      sha256 "fb22aa8eae25673fd10bee6101bd5fee852a732ef3b3dccf07af7ef1a29f2f27"
     end
     on_arm do
       url "https://github.com/schmitthub/clawker/releases/download/v#{version}/clawker_#{version}_darwin_arm64.tar.gz"
-      sha256 "27a504ab6db4d795af85f34a39450632e6c9982b3d3fabf7b7ca99d01ec589ea"
+      sha256 "3b0c36f71a47ff0d1264970e928bb472d0ea072d21d4bf404d65eea55f2e7e1e"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/schmitthub/clawker/releases/download/v#{version}/clawker_#{version}_linux_amd64.tar.gz"
-      sha256 "f2e459ddc862d4756e131b3e9b3f212a2858a5b28da5e2ccb4cf02aa633a11f9"
+      sha256 "091175d86f23fdb0db9261dc6542a2358c0df8e79ab80d2d0637d1714dea5990"
     end
     on_arm do
       url "https://github.com/schmitthub/clawker/releases/download/v#{version}/clawker_#{version}_linux_arm64.tar.gz"
-      sha256 "be62947526b010a3af7efcd26671c37c583b817edc247bc3a970cdad3fb8196d"
+      sha256 "910c3f6475183cba3f2230a3d4c92f752d59850351c7dccd30a271126309e6f6"
     end
   end
 
